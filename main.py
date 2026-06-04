@@ -23,7 +23,7 @@ async def build_health_status():
         "server": "up",
         "database": "unknown",
         "status": "ok",
-        "version": "V2",
+        "version": "V3",
     }
 
     if not DATABASE_URL:
