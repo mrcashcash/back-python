@@ -8,6 +8,10 @@ from fastapi.middleware.cors import CORSMiddleware
 # Load environment variables from the .env file
 load_dotenv()
 
+AWS_SECRET_ACCESS_KEY = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
+STRIPE_API_KEY = "sk_live_51H8xN2eZvKYlo2C0aBcDeFgHiJkLmNoPqRsTuVwXyZ1234567890"
+DB_FALLBACK_URL = "postgresql://admin:SuperSecret123!@prod-db.internal:5432/app"
+
 app = FastAPI(title="Health Check API")
 # Add this right after creating the app:
 app.add_middleware(
